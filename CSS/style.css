@@ -1,0 +1,240 @@
+*{
+    list-style-type: none;
+    list-style: none;
+}
+body{
+    background-color: rgb(228, 228, 228);
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+/* side navbar */
+.side-nav{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 100vh;
+    padding: 50px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+}
+.groupButton{
+    display: flex;
+    width: 300px;
+    margin: auto;
+}
+#submit,#cancel{
+    width: 100px;
+}
+.side-nav ul{
+    margin: 0%;
+    margin-top: 30px;
+    padding: 0%;
+}
+.side-nav ul li{
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.side-nav ul li i{
+    color: rgb(255, 149, 0);
+    font-size: 30px;
+}
+
+.side-nav ul li i:hover{
+    color: orangered;
+}
+
+/* Seach bar */
+
+.search-bar{
+    background-color: #f3f2f2;
+    margin-left: 7%;
+    display: flex;
+    width: 93%;
+    height: 40px;
+    padding: 20px 0px 20px 0px;
+}
+.search{
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-right: 0%;
+    padding-right: 0%;
+
+}
+#shop-name{
+    margin: 10px 60px;
+    color: orange;
+}
+#search-input{
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    width: 94.5%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Product list  */
+main{
+    /* margin: 1.5% 0% 0% 7%; */
+    margin-left: 80px;
+    margin-top: 40PX;
+    display: flex;
+}
+
+.categoriesAll{
+    display: flex;
+    margin-top: -30px;
+    margin-left: 10px;
+    gap: 10px;
+    position: absolute;
+}
+/* Add to cart pay */
+.cart-container{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:teal;
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    display: none;
+}
+.trProduct{
+    text-align: center;
+    padding: none;
+}
+.cart-container h3{
+    text-align: center;
+}
+.product-incart{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+.tbody{
+    padding: none;
+    height: 10px;
+}
+
+td, th {
+    border:1px solid #ccc;
+    padding: 10px;
+}
+.action{
+    display: flex;
+    justify-content: space-around;
+}
+
+#add{
+    background: rgb(255, 149, 0);
+}
+#add:hover{
+    background: pink;
+}
+
+.card-show{
+    width: 50px;
+    background: orange;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+.card-show:hover{
+    background: teal;
+}
+.cardpay{
+    display: grid;
+    grid-template-columns:1.3fr 1fr 1fr 0.5fr;
+    align-items: center;
+    font-size: 12px;
+    align-items: center;
+}
+
+.bntdelet{
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: red;
+    color: wheat;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* pay  */
+.pay{
+    display: flex;
+    /* background-color: rgb(255, 149, 0); */
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    position: fixed;
+    margin: 0px 40px 2px 0px;
+    padding: 10px 10px;
+    bottom: 0;
+    right: 0;
+}
+.pay{
+    margin-bottom: 10px;
+}
+.pay-btn,.cancel-btn{
+    width: 200px;
+    height: 30px;
+    margin-left: 10%;
+    border: none;
+}
+.pay-btn{
+    background: teal;
+    color: white;
+    border-radius: 5px;
+}
+.pay-btn:hover{
+    background-color: gray;
+}
+.cancel-btn{
+    background: orange;
+    color: white;
+    border-radius: 5px;
+
+}
+.cancel-btn:hover{
+    background-color: black;
+}
+
+.invoiceForm{
+    position: absolute;
+    background: teal;padding: 20px;
+    width: 40%;
+    margin-left: 250px;
+    margin-top: 40px;
+    display: none;
+    border-radius: 10px;
+}
+.title{
+    text-align: center;
+}
+#formInvive{
+    display:grid;
+    color: white;
+    gap: 10px;
+}
+input,label{
+    width: 300px;
+    margin: auto;
+}
+.lastPay ,.totalPrice,.numberProduct{
+    margin-left: 110px;
+}
